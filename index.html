@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+	<title>Will Smith | Tribute Page</title>
+</head>
+<body>
+<header>
+	<nav id="topNav">
+	 <label for="toggle" class="icon-toggle">&#9776 <span>menu</span></label>
+	 <input type="checkbox" id="toggle" />
+	 <div class="menu">
+	  <a href="#TheLifeOfSuccess">The Life of Success</a>
+	  <a href="#Top3Movies">Top 3 Movies</a>
+	  <a href="#OnSocialMedia">On Social Media</a>
+	 </div>
+	</nav>
+	<div id="big-idea">
+		<div>Will Smith makes the world better!</div>
+	</div>
+</header>
+<main>
+	<section>
+		<a name="TheLifeOfSuccess" id="TheLifeOfSuccess"></a>
+		<h1>The Life of Success</h1>
+		<div class="content">
+			<p><b>Willard Carroll Smith Jr.</b> (born September 25, 1968) is an American actor, rapper and media personality.
+
+In April 2007, Newsweek called him "the most powerful actor in Hollywood".[4] Smith has been nominated for five Golden Globe Awards and two Academy Awards, and has won four Grammy Awards.</p>
+		</div>
+	</section>
+	<section>
+		<a name="Top3Movies" id="Top3Movies"></a>
+		<h1>Top 3 Movies</h1>
+		<div class="content cards">
+			<article class="card">
+				<h2>I Am Legend</h2>
+				<img src="assets/images/I_am_legend_teaser-min.jpg" />
+			</article>
+			<article class="card">
+				<h2>Enemy of the State</h2>
+				<img src="assets/images/Enemy_of_the_State_(film)_poster_art-min.jpg" />
+			</article>
+			<article class="card">
+				<h2>Where the Day Takes You</h2>
+				<img src="assets/images/Where_the_Day_Takes_You_Poster-min.jpg" />
+			</article>
+		</div>
+	</section>
+	<section>
+		<a name="OnSocialMedia" id="OnSocialMedia"></a>
+		<h1>On Social Media</h1>
+		<div class="content" id="social-medias">
+			<a href="https://www.instagram.com/willsmith/"><i class="fa fa-3x fa-instagram"></i></a>
+			<a href="https://www.youtube.com/willsmith"><i class="fa fa-3x fa-youtube"></i></a>
+		</div>
+	</section>
+	<section id="official-website">
+		<a href="https://www.willsmith.com/" class="button-yellow" target="_blank">open official website</a>
+	</section>
+</main>
+<footer><a href="https://github.com/heyhellomat/Tribute-Page-to-Will-Smith" target="_blank">See on Github</a></footer>
+</body>
+<script src="https://use.fontawesome.com/2780c656cb.js"></script>
+<script type="text/javascript">
+	/* Smooth scrolling behavior, using ID as reference */
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</html>
